@@ -3,10 +3,8 @@
     margin: 0;
     box-sizing: border-box;
     font-family: sans-serif;
-    
+   
 }
-
-
 
 h1{
     padding: 0;
@@ -31,9 +29,6 @@ h1{
     padding:0 2.5rem;
 }
 
-
-
-/* NAVBAR */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -41,9 +36,6 @@ h1{
     background-color: #333;
     color: #fff;
 
-  }
-  .navbar>.box{
-    /* padding:  ; */
   }
   
   .logo a {
@@ -123,11 +115,6 @@ text-transform: uppercase;
   .closebtn:hover {
     color: black;
   }
-
-.notification{
-
-}
-
 .navbar{
     background-image: url(images/pattern-bg.png);
 }
@@ -174,8 +161,6 @@ color: var(--color-white);
    ul{
     display: flex;
 }
-
-
 
 .navbar-content
 {
@@ -239,7 +224,6 @@ color: var(--color-white);
 .navbar-links ul li:hover .submenu{
     display: block;
     position: absolute;
-    /* margin-top: 1rem; */
     background-color: var(--color-light-background);
 z-index: 5000;
 }
@@ -254,7 +238,6 @@ z-index: 5000;
 
 .submenu ul li a{
     color: var(--color-white);
-    /* border-bottom: 1px solid rebeccapurple; */
     padding: 0.5rem 0.75rem;
     clip-path: none;
 }
@@ -360,11 +343,9 @@ width: 40%;
     display: none;
 }
 .colum-first-half h1{
-    /* width: 80%; */
     text-transform: uppercase;
 }
 .colum-first-half p{
-    /* width: 80%; */
     font-size: 1.2rem;
 }
 
@@ -391,7 +372,6 @@ width: 40%;
 .left-middle-portion{
     width: 70%;
 }
-/* SLICK ARD GRID */
 .slick-card-grid-padding{
     margin: 2rem 0;
     width: 100%;
@@ -451,7 +431,6 @@ hr{
     text-align: center;
     text-transform: uppercase;
     background-color: var(--new-dark-bg);
-    /* opacity: 0.85; */
     color: white;   
     padding: 0.5rem ;
 
@@ -518,15 +497,12 @@ hr{
     opacity: 0;
 }
 
-/* RIGHT MIDDLE PORTION */
 .right-middle-portion{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    /* margin: 2rem ; */
     background-color: var(--color-light-background);
-    /* width: 80%; */
     padding: 1.5rem ;
     margin: 1rem 0;
 
@@ -573,8 +549,6 @@ hr{
     font-weight: 100;
 
 }
-/* CONTACT PORTION */
-
 
 .contact-portion{
     background-color: var(--color-dark-background2);
@@ -682,7 +656,6 @@ padding: 2rem 0;
     text-decoration: none;
     color: white;
     text-transform: uppercase;
-    /* padding:0 0.75rem; */
 }
 
 .footer-images{
@@ -706,14 +679,7 @@ padding: 2rem 0;
 .footer-text span{
     padding:0 0.75rem;
 }
-
-
-
-/* DROPDWON */
-
-
   
-/* tablet  */
 @media only screen and (max-width: 950px ){
     
     .heading{
@@ -838,38 +804,25 @@ width: 100%;
 }
 
 }
-/* phone responsive */
 
 @media only screen and (max-width: 750px){
   
 
 
 
-.h1-content{
-    /* position: relative; */
-}
-.h1-content >p{
-    /* position: absolute; */
-    /* top: 10%; */
-    /* width: 50%; */
-}
 
    .navbar-links ul li a{
     font-size: 1rem;
     padding: 0.75rem 1rem;
    }
-.nav-search
-{position: relative;}
+.nav-search{
+    position: relative;}
    .nav-search img{
     position: absolute;
-
-
    }
 
     
-   
     .navbar-links> a{
-        /* padding: 1rem 0.5rem; */
         font-size: 0.85rem;
     }
    
@@ -915,8 +868,7 @@ width: 100%;
     @media only screen and (max-width: 600px) {
        
         .nav-search input{
-            /* padding: 0.6rem 0.4rem; */
-            /* text-transform: uppercase; */
+            
             margin: 0;
         }
         .card-context{
@@ -964,9 +916,6 @@ font-size: 1rem;
  font-weight: 100;
  font-size: 0.8rem;   
 }
-
-
-
 
         .notification{
             display: none;
@@ -1049,9 +998,7 @@ font-size: 1rem;
          align-items: flex-start;
          margin-bottom: 0.5rem;
         }
-        .buttons button+button{
-         /* margin: 0 1rem; */
-        }
+        
         .buttons {
          padding: 0;
          margin-top: 0.5rem;
@@ -1122,7 +1069,6 @@ font-size: 1rem;
      flex-direction: column-reverse;
      align-items: flex-start;
      justify-content: flex-start;
-     /* padding: 5rem 0; */
      }
      .colum-first-half-image{
          width: 100%;
@@ -1135,7 +1081,6 @@ font-size: 1rem;
      justify-content: flex-start;
      padding: 1.5rem 0;
      position: relative;
-     /* height: 75vh; */
      
      }
      .nav-search{
@@ -1149,17 +1094,14 @@ font-size: 1rem;
      font-weight: bold;
      position: absolute;
      top: 65%;
-     /* padding-top: 5rem ; */
      width: 100%;
      }
      .h1-content >p{
         
          width: 100%;
-         /* padding-top: 3rem; */
         
      } 
      
-     /* MIDDLE SECTION */
      
      .middle-portion{
      
@@ -1176,7 +1118,6 @@ font-size: 1rem;
      
      
      
-     /* CARDS */
      
      .cards{
          display: grid;
@@ -1189,7 +1130,6 @@ font-size: 1rem;
          padding: 0.5rem ;
      }
      
-     /* CARD1 DETAIL */
      
      .cards-detail {
          margin: 0;
@@ -1225,14 +1165,12 @@ font-size: 1rem;
      
      
      .card2-detail{
-         /* display: flex; */
          flex-direction: column-reverse;
          width: 100%;
         
      }
      
      
-     /* RIGHT MIDDLE SECTION */
      
      .right-middle-portion{
       width: 100%;
@@ -1246,21 +1184,17 @@ font-size: 1rem;
      
      
      
-     /* CONTACT */
      
      .contact-form{
          width: 100%;
          padding: 2rem 0;
-         /* margin: 0 auto; */
-         /* padding: 1rem 0; */
+         
      }
      
      
-     /* FOOTER */
      
      .footer-content{
          width: 100%;
-         /* margin: 1rem 0; */
          text-align: center;
      }
      .footer-images{
@@ -1325,7 +1259,6 @@ font-size: 1rem;
         .text-area{
             display: flex;
             flex-direction: column;
-            /* align-items: flex-start; */
-            /* justify-content: flex-start; */
+          
         }
      }
