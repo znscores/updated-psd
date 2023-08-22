@@ -43,7 +43,7 @@ h1{
 
   }
   .navbar>.box{
-    padding: 0 ;
+    /* padding:  ; */
   }
   
   .logo a {
@@ -84,9 +84,7 @@ h1{
     margin: 5px;
   }
   
-  .navbar-content>form{
-    margin-right: 1rem;
-}
+  
 .navbar-content>form>input{
     text-transform: uppercase;
 }
@@ -214,12 +212,12 @@ color: var(--color-white);
 .nav-search>img{
     width: 1.15rem;
     position: absolute;
-    right: 2%;
+    right: 1%;
     top: 30%;
     cursor: pointer;
 }
 .nav-links ul li a{
-    padding: 1rem 1.5rem;
+    padding: 0.75rem 1.25rem;
     text-transform: uppercase;
 
 }
@@ -241,7 +239,7 @@ color: var(--color-white);
 .navbar-links ul li:hover .submenu{
     display: block;
     position: absolute;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
     background-color: var(--color-light-background);
 z-index: 5000;
 }
@@ -491,8 +489,7 @@ hr{
     text-transform: uppercase;
 }
 .card1-detail-context p{
-    /* font-size: 1.35rem; */
-    /* width: 75%; */
+   
     font-weight: 100;
 
 }
@@ -732,25 +729,25 @@ padding: 2rem 0;
     padding: 0.5rem 0.75rem;
 }
 .h1-content>h1{
-    width: 70%;
+    width: 100%;
 }
 .h1-content>p{
-    width: 80%;
+    width: 100%;
 }
 .navbar>.box{
-    padding: 0;
+    padding: 0 1.5rem;
 }
 .navbar-links{
     width: 100%;
 }
-
+.navbar-content ul li a{
+    font-size: 1.2rem;
+}
 .navbar-links> a{
     padding: 0.75rem 0.6rem;
     font-size: 1.2rem;
 }
-.navbar-content>form{
-    margin-right: 1rem;
-}
+
 
 .middle-portion{
     display: flex;
@@ -842,15 +839,37 @@ width: 100%;
 
 }
 /* phone responsive */
+
 @media only screen and (max-width: 750px){
   
-   
-    .navbar-content>form{
-        margin-right: 1rem;
-    }
+
+
+
+.h1-content{
+    /* position: relative; */
+}
+.h1-content >p{
+    /* position: absolute; */
+    /* top: 10%; */
+    /* width: 50%; */
+}
+
+   .navbar-links ul li a{
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
+   }
+.nav-search
+{position: relative;}
+   .nav-search img{
+    position: absolute;
+
+
+   }
+
+    
    
     .navbar-links> a{
-        padding: 1rem 0.5rem;
+        /* padding: 1rem 0.5rem; */
         font-size: 0.85rem;
     }
    
@@ -876,11 +895,25 @@ width: 100%;
         padding: 1.5rem 0.9rem;  
            
        }
+
+       .h1-content>img{
+        width: 25rem;
+        padding-left: 10rem;
+       }
    
     
     }
     
+    @media only screen and (max-width: 675px){
+        .h1-content{
+            padding: 1rem;
+        }
+        .h1-content>h1{
+            font-size: 1.4rem;
+        }
+    }
     @media only screen and (max-width: 600px) {
+       
         .nav-search input{
             /* padding: 0.6rem 0.4rem; */
             /* text-transform: uppercase; */
@@ -892,16 +925,7 @@ width: 100%;
         .form-right-side{
             margin-left: 0rem;
         }
-.navbar-content{
-    position: relative;
-}
-        .nav-search>img{
-            width: 1.15rem;
-            position: absolute;
-            left: 30%;
-            top: 15%;
-            cursor: pointer;
-        }
+       
 .heading>h1{
     font-size: 1.2rem;
 }
@@ -1076,7 +1100,7 @@ font-size: 1rem;
         }
         .navbar-content{
          width: 100%;
-         padding: 1rem;
+         padding: 1rem 0;
         }
         .navbar-content> input{
          width: 100%;
@@ -1114,20 +1138,24 @@ font-size: 1rem;
      /* height: 75vh; */
      
      }
+     .nav-search{
+        display: block;
+        width: 70%;
+    }
      
       .h1-content >h1{
      font-size: 1.5rem;
      width: 60%;
      font-weight: bold;
      position: absolute;
-     top: 61%;
+     top: 65%;
      /* padding-top: 5rem ; */
      width: 100%;
      }
      .h1-content >p{
         
-         width: 70%;
-         /* padding-top: 2.5rem; */
+         width: 100%;
+         /* padding-top: 3rem; */
         
      } 
      
@@ -1236,7 +1264,7 @@ font-size: 1rem;
          text-align: center;
      }
      .footer-images{
-         width: 50%;
+         width: 15rem;
          display: flex;
          text-align: center;
          
@@ -1252,6 +1280,14 @@ font-size: 1rem;
     
     
      @media only screen and (max-width:400px){
+
+        .nav-search{
+            display: block;
+        }
+        .nav-search{
+            width: 100%;
+        }
+     
         .contact-form text-area{
             width: 30%;
         }
