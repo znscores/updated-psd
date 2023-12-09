@@ -3,11 +3,11 @@
     margin: 0;
     box-sizing: border-box;
     font-family: sans-serif;
-   
 }
 
 h1{
     padding: 0;
+    margin: 0;
 }
 :root{
     font-size: 12px;
@@ -15,8 +15,6 @@ h1{
     --light-bg:#08512d;
     --hover-bg: #2A8347;
     --white-clr: #fff;
-   
-   
 }
 
 .box{
@@ -411,7 +409,7 @@ padding-bottom: 2.5rem;
 .middle-portion{
     display: flex; 
     flex-direction: row;
-    justify-content:space-between;
+    justify-content:flex-start;
     align-items: flex-start; 
 }
 .left-middle-portion{
@@ -475,7 +473,7 @@ hr{
     margin: 1rem 0 1.5rem 0 ;
 }
 .p-2{
-    padding: 1rem 1rem 8rem 1rem;
+    padding: 1rem 1rem 7.85rem 1rem;
     background: url(images/pattern-bg.png);
     background-color: var(--hover-bg);
     width: 100%;
@@ -572,7 +570,7 @@ hr{
     align-items: flex-start;
     background: url(images/pattern-bg.png);
     background-color: var(--hover-bg);
-    margin: 1rem 0;
+    margin: 1rem 1.5rem;
 
 }
 .right-middle-portion>h2{
@@ -1482,3 +1480,41 @@ line-height: 1.8rem;
         z-index: 10000;}
          */
     
+         .events{
+            counter-set: paragraph-counter;
+         }
+         .number>p::after{
+            counter-increment: paragraph-counter;
+            content: counter(paragraph-counter)
+         }
+.gender-radio{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+         input[type=radio] {
+            appearance: none;
+            padding: 7.5px;
+            background-color: var(--white-clr);
+            border-radius:50%;
+            border: 2px solid var(--white-clr);
+         }
+         input[type=radio]:checked {
+            background-color: var(--dark-bg);
+         }
+
+         button:hover{
+       background-color : var(--light-bg);
+         }
+         .btn-1:hover{
+background-color: var(--hover-bg) !important;
+         }
+         .button-portion>button:hover{
+            background-color: var(--hover-bg);
+         }
+         .read-more:hover{
+            cursor: pointer;
+            background-color: var(--dark-bg);
+         }
